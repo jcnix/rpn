@@ -1,5 +1,5 @@
 {
-  "name": "rpn",
+  "name": "rpn-array",
   "version": "1.0.0",
   "description": "Reverse Polish calculator",
   "main": "rpn.js",
