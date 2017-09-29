@@ -1,7 +1,7 @@
 # rpn-array
 Javascript Reverse Polish calculator
 
-* Usage
+## Usage
 
 ES5
 
