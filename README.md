@@ -12,10 +12,10 @@ var result = [1, 2, rpn.add].rpn(); //3
 ```
 
 The package contains some functions for common operations.
-`rpn.add`
-`rpn.subtract`
-`rpn.multiply`
-`rpn.divide`
+`rpn.add`  
+`rpn.subtract`  
+`rpn.multiply`  
+`rpn.divide`  
 
 You can also supply your own functions for performing operations
 
