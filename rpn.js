@@ -1,5 +1,5 @@
 function rpn(acc, item) {
-	if (typeof item === 'function') {
+	if(typeof item === 'function') {
 		var b = acc.pop();
 		var a = acc.pop();
 		acc.push(item(a, b));
