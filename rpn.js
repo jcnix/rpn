@@ -1,43 +1,43 @@
 function rpn(acc, item) {
-    if (typeof item === 'function') {
-        var b = acc.pop();
-        var a = acc.pop();
-        acc.push(item(a, b));
+	if (typeof item === 'function') {
+		var b = acc.pop();
+		var a = acc.pop();
+		acc.push(item(a, b));
 
-        return acc;
-    }
+		return acc;
+	}
 
-    acc.push(item);
-    return acc;
+	acc.push(item);
+	return acc;
 }
 
 Array.prototype.rpn = function() {
-    return this.reduce(rpn, [])[0];
+	return this.reduce(rpn, [])[0];
 }
 
 Array.prototype.polish = function() {
-    return this.reverse().reduce(rpn, [])[0];
+	return this.reverse().reduce(rpn, [])[0];
 }
 
 function add(a, b) {
-    return a + b;
+	return a + b;
 }
 
 function subtract(a, b) {
-    return a - b;
+	return a - b;
 }
 
 function multiply(a, b) {
-    return a * b;
+	return a * b;
 }
 
 function divide(a, b) {
-    return a / b;
+	return a / b;
 }
 
 module.exports = {
-    add: add,
-    subtract: subtract,
-    multiply: multiply,
-    divide: divide
+	add: add,
+	subtract: subtract,
+	multiply: multiply,
+	divide: divide
 }
