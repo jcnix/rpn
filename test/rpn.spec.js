@@ -33,6 +33,13 @@ describe('The rpn function', () => {
         expect(result).equal(5);
     });
 
+    it('should support polish notation', () => {
+        const result = [rpn.subtract, rpn.multiply, rpn.divide, 15, rpn.subtract, 7, rpn.add, 1, 1, 3,
+            rpn.add, 2, rpn.add, 1, 1].polish();
+
+        expect(result).equal(5);
+    });
+
     it('should support user provided operations', () => {
         function anyOperation(a, b) {
             return 2 * (a - b);

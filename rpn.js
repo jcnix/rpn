@@ -15,6 +15,10 @@ Array.prototype.rpn = function() {
     return this.reduce(rpn, [])[0];
 }
 
+Array.prototype.polish = function() {
+    return this.reverse().reduce(rpn, [])[0];
+}
+
 function add(a, b) {
     return a + b;
 }
