@@ -2,7 +2,7 @@ var expect = require('chai').expect;
 var rpn = require('../rpn.js');
 
 describe('The rpn function', () => {
-    it('support addition', () => {
+    it('should support addition', () => {
         const result = [1, 2, rpn.add].rpn();
 
         expect(result).equal(3);
